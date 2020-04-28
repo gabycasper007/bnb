@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+@import "../../../styles/media";
+
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  
+  &.left {
+    padding-right: $gutter;
+  }
+
+  &.right {
+    padding-left: $gutter;
+  }
+
+  .withSections {
+    display: flex;
+    height: 100%;
+
+    @include media(">=lg") {
+      flex-direction: column;
+    }
+  }
+
+  @include media("<lg") {
+    &.left, &.right {
+      padding: 0;
+    }
+    &.left {
+      flex-shrink: 1.2;
+    }
+  }
+}

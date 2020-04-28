@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+@import "../../../styles/media";
+
+.section {
+  flex-grow: 1;
+
+  &.second {
+    padding-top: $gutter;
+  }
+
+  @include media("<lg") {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+
+    &.second {
+      padding-left: $gutter;
+    }
+  }
+}

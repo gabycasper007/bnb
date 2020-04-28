@@ -1,0 +1,27 @@
+@import "./reboot";
+@import "./media";
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+  @include media("<lg") {
+    height: 180vh;
+  }
+}
+
+.full {
+  height: 100%;
+  width: 100%;
+}
+
+.half {
+  height: 50%;
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+@import "../../../styles/media";
+
+.article {
+  flex-grow: 4;
+  height: 100%;
+
+  @include media("<lg") {
+    order: -1;
+  }
+}

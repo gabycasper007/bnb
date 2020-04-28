@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+
+.footer {
+  padding-top: $gutter;
+
+  width: 100%;
+  flex-grow: 1.5;
+  
+  .footerBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
