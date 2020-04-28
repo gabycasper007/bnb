@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About the implementation
 
 1. This project was implemented using **Context API** because I don't expect the user to change the theme often.
-If the user wants to have more fine grain control over the theme, I would use Redux instead.
+If the user wants to have more fine-grained control over the theme, I would use Redux instead.
 
 2. By clicking the button you will **switch between 2 themes** (like Binance has 2 themes... light and dark.)
 I save the theme in localStorage to keep the user selection.
