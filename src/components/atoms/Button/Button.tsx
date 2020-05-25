@@ -10,7 +10,11 @@ const Button: React.FC<Props> = ({ text }) => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <button className={styles.button} style={{ ...theme.button }} onClick={() => toggleTheme()}>
+    <button
+      className={styles.button}
+      style={{ ...theme.button }}
+      onClick={() => toggleTheme()}
+    >
       {text}
     </button>
   );

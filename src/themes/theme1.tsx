@@ -3,7 +3,7 @@ import Themable from './themable.interface';
 const theme: Themable = {
   id: 1,
   header: {
-    backgroundColor: '#4F5A27'
+    backgroundColor: 'red'
   },
   footer: {
     backgroundColor: '#CCC870'
